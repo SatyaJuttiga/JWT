@@ -38,6 +38,7 @@ export const login=(req,res) => {
      });
 }
 
+/*
 export const loginRequired = (req,res,next) => {
     if(req.user){
         next();
@@ -45,18 +46,6 @@ export const loginRequired = (req,res,next) => {
         return res.status(401).json({ message:'Unauthorized user!!!'});
     }
 }
-
-/*
-export const allusers=(req,res) => {
-
-    user.find({},function(err,allCampgrounds){
-        if(err){
-            console.log(err);
-        }else{
-            res.render('campgrounds/index',{campgrounds:allCampgrounds,currentUser: req.user});
-        }
-    });
-    });
 */
 /*
 export const partiuser = (req,res,next) => {
